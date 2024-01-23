@@ -25,6 +25,7 @@ public class UserController {
     @Autowired
     private TicketService ticketService;
 
+    //API for create user
     @PostMapping("/createUser")
     public User createUser(@RequestBody User user){
         return userService.saveUser(user);
